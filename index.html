@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">      
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="assure">
+        <div class="overlay"></div>
+        <div class="query">
+            <p>Are you sure you want to delete this todo?</p>
+            <div class="btn">
+                <button class="yes">Affirmative</button>
+                <button class="no">Let's Keep it</button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <h1>Todo List</h1><sub> (V1.2)</sub>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="todo-form">
+                <form method="get">
+                    <input type="text" name="Todo" id="todoinput" placeholder="Enter Todo" required>
+                    <button type="submit" class="add">Add</button>
+                    <select name="todo" class="filter">
+                        <option value="all">All</option>
+                        <option value="completed">Completed</option>
+                        <option value="incompleted">Incompleted</option>  
+                    </select>
+                </form>
+            </div>
+            <div class="todos">
+                <ul class="todolist"></ul>
+            </div>
+            
+        </div>
+    </main>
+    <!-- <footer>
+        <div class="foot"><p>V1.0(Just launched)</p></div>
+    </footer> -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="./main.js"></script>
+</body>
+</html>

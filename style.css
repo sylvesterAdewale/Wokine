@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lexend', sans-serif;
+    color: #050055;
+    background-color: #eafaff;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+header, main, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;padding: 5vh;
+}
+header {
+    margin-bottom: 10vh;
+}
+footer {
+    position: absolute;
+    bottom: 1vh;
+}
+form {
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+input, input:focus, select, select:focus, button{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Lexend', sans-serif;
+    box-shadow: 0px 5px 15px #d5d3ff59;
+}
+#todoinput {
+    flex: 1;
+    width: 40vh;
+}
+.add, .done, .no {
+    background: #050055;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.add:hover, .done:hover, .no:hover {
+    background-color: #1d149e;
+}
+
+.todos {
+    margin-top: 15vh;
+}
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+.todoitem {
+    flex: 1;
+    list-style: none;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px #d5d3ff59;
+}
+.done, .trash {
+    margin-left: 10px;
+}
+.trash, .yes {
+    background-color: #ff0000;
+    color: #ffffff;
+    box-shadow: 0px 5px 15px #ff9f9f65;
+    cursor: pointer;
+}
+.complete {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.assure {
+    display: none;
+    justify-content: center;
+    align-content: center;
+    z-index: 2;
+    overflow: hidden;
+    position: fixed;
+}
+.show {
+    display: flex;
+}
+.overlay {
+    top: 0;
+    overflow: hidden;
+    background-color: #00000028;
+    overflow: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.query  {
+    margin-top: 30vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 30px;
+    box-shadow: 0px 5px 15px #d5d3ff59;
+    background-color: #ffffff;
+    border-radius: 10px;
+    z-index: 5;
+}
+.btn {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
